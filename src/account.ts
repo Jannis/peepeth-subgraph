@@ -71,17 +71,17 @@ export function handleUpdateAccount(call: UpdateAccountCall): void {
 }
 
 export function handleChangeName(call: ChangeNameCall): void {
-  let from = call.transaction.from.toHex();
-  let account = Account.load(from);
-  if (account !== null) {
-    if (isValidUtf8(call.inputs._name)) {
-      account.name = call.inputs._name.toString();
-    } else {
-      account.name = '#INVALID#<' + call.inputs._name.toHexString() + '>';
-    }
-    applyAccountUpdateInfo(account!, call);
-  }
-  account.save();
+  // let from = call.transaction.from.toHex();
+  // let account = Account.load(from);
+  // if (account !== null) {
+  //   if (isValidUtf8(call.inputs._name)) {
+  //     account.name = call.inputs._name.toString();
+  //   } else {
+  //     account.name = '#INVALID#<' + call.inputs._name.toHexString() + '>';
+  //   }
+  //   applyAccountUpdateInfo(account!, call);
+  // }
+  // account.save();
 }
 
 export function handleTransferAccount(call: TransferAccountCall): void {

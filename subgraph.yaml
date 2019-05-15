@@ -22,24 +22,24 @@ dataSources:
         - name: Contract
           file: ./abis/Contract.json
       callHandlers:
-        - function: createAccount(bytes16,string)
-          handler: handleCreateAccount
+        # - function: createAccount(bytes16,string)
+        #   handler: handleCreateAccount
         # - function: updateAccount(string)
         #   handler: handleUpdateAccount
-        # - function: changeName(bytes16)
-        #   handler: handleChangeName
-        - function: transferAccount(address)
-          handler: handleTransferAccount
+        - function: changeName(bytes16)
+          handler: handleChangeName
+        # - function: transferAccount(address)
+        #   handler: handleTransferAccount
         # - function: follow(address)
         #   handler: handleFollow
         # - function: unFollow(address)
         #   handler: handleUnfollow
-        - function: share(string)
-          handler: handleShare
-        - function: post(string)
-          handler: handlePost
-        - function: reply(string)
-          handler: handleReply
+        # - function: share(string)
+        #   handler: handleShare
+        # - function: post(string)
+        #   handler: handlePost
+        # - function: reply(string)
+        #   handler: handleReply
         # - function: saveBatch(string)
         #   handler: handleSaveBatch
         # - function: setIsActive(bool)
